@@ -24,7 +24,6 @@ repo sync -c
 | device/mediatek/sepolicy_vndr | LineageOS/android_device_mediatek_sepolicy_vndr | lineage-23.2 | MTK sepolicy |
 | hardware/transsion | mt6789-transsion/hardware_transsion | lineage-23.0 | Transsion HALs; no lineage-24.0 branch exists yet |
 | vendor/mediatek/ims | xiaomi-mediatek-devs/android_vendor_mediatek_ims | android-16 | IMS |
-| vendor/infinity | ProjectInfinity-X/vendor_infinity | 16 | common_full_phone.mk for `infinity_X6886` |
 
 `hardware/google/interfaces`, `hardware/google/pixel*` and `hardware/lineage/compat` come from the LineageOS default manifest; do not add duplicates.
 
