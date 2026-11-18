@@ -24,9 +24,4 @@
   <project name="ProjectInfinity-X/vendor_infinity"
            path="vendor/infinity" remote="x6886" revision="16" />
 
-  <!-- Lunaris Dolby, synced only; not wired into the build yet.
-       Wire with inherit-product(vendor/lunaris/dolby/dolby.mk) plus
-       BoardConfigDolby.mk only after choosing a Dolby stack for this device. -->
-  <project name="tranQuila-Project/vendor_lunaris_dolby"
-           path="vendor/lunaris/dolby" remote="x6886" revision="main" />
 </manifest>

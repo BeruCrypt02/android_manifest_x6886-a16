@@ -25,11 +25,10 @@ repo sync -c
 | hardware/transsion | mt6789-transsion/hardware_transsion | lineage-23.0 | Transsion HALs; no lineage-24.0 branch exists yet |
 | vendor/mediatek/ims | mmetem55/android_vendor_mediatek_ims | android-17 | IMS |
 | vendor/infinity | ProjectInfinity-X/vendor_infinity | 16 | common_full_phone.mk for `infinity_X6886` |
-| vendor/lunaris/dolby | tranQuila-Project/vendor_lunaris_dolby | main | synced only; not wired into the build |
 
 `hardware/google/interfaces`, `hardware/google/pixel*` and `hardware/lineage/compat` come from the LineageOS default manifest; do not add duplicates.
 
 ## Notes
 
 - `hardware/transsion` only ships `lineage-23.0`; compatibility with lineage-24.0 is unverified.
-- `vendor/lunaris/dolby` ships an SM6375-targeted Dolby stack. The stock X6886 dump also carries its own Dolby blobs (`vendor.dolby.dms@2.0`, `libcodec2_store_dolby`, `vendor.dolby.media.c2-default-service-dax`, `vendor.dolby.dms.service`) which are not yet in the vendor tree. Pick a stack before wiring it into the build.
+- Stock dump carries its own Dolby stack (`vendor.dolby.dms@2.0`, `libcodec2_store_dolby`, `vendor.dolby.media.c2-default-service-dax`, `vendor.dolby.dms.service`) which is not yet in the vendor tree. Wiring Dolby is a separate decision; it is not in this manifest.
