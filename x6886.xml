@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="x6886" fetch="https://github.com/" />
+
+  <!-- Device / vendor trees for the Infinix X6886 (MT6789) -->
+  <project name="BeruCrypt02/android_device_infinix_X6886-a16"
+           path="device/infinix/x6886" remote="x6886" revision="lineage-24.0" />
+  <project name="BeruCrypt02/android_vendor_infinix_X6886-a16"
+           path="vendor/infinix/x6886" remote="x6886" revision="lineage-24.0" />
+  <project name="BeruCrypt02/android_device_transsion_infinix_X6886-prebuilts"
+           path="device/infinix/x6886-prebuilts" remote="x6886" revision="main" />
+
+  <!-- MTK sources the tree inherits -->
+  <project name="LineageOS/android_hardware_mediatek"
+           path="hardware/mediatek" remote="x6886" revision="lineage-24.0" />
+  <project name="LineageOS/android_device_mediatek_sepolicy_vndr"
+           path="device/mediatek/sepolicy_vndr" remote="x6886" revision="lineage-24.0" />
+  <project name="mt6789-transsion/hardware_transsion"
+           path="hardware/transsion" remote="x6886" revision="lineage-23.0" />
+  <project name="xiaomi-mediatek-devs/android_vendor_mediatek_ims"
+           path="vendor/mediatek/ims" remote="x6886" revision="android-16" />
+
+  <!-- InfinityX vendor; required by the infinity_X6886 product (common_full_phone.mk) -->
+  <project name="ProjectInfinity-X/vendor_infinity"
+           path="vendor/infinity" remote="x6886" revision="16" />
+
+  <!-- Lunaris Dolby, synced only; not wired into the build yet.
+       Wire with inherit-product(vendor/lunaris/dolby/dolby.mk) plus
+       BoardConfigDolby.mk only after choosing a Dolby stack for this device. -->
+  <project name="tranQuila-Project/vendor_lunaris_dolby"
+           path="vendor/lunaris/dolby" remote="x6886" revision="main" />
+</manifest>
