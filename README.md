@@ -20,10 +20,10 @@ repo sync -c
 | device/infinix/x6886 | BeruCrypt02/android_device_infinix_X6886-a16 | lineage-24.0 | device tree |
 | vendor/infinix/x6886 | BeruCrypt02/android_vendor_infinix_X6886-a16 | lineage-24.0 | vendor blobs |
 | device/infinix/x6886-prebuilts | BeruCrypt02/android_device_transsion_infinix_X6886-prebuilts | main | kernel prebuilts |
-| hardware/mediatek | LineageOS/android_hardware_mediatek | lineage-24.0 | MT6789 HALs |
-| device/mediatek/sepolicy_vndr | LineageOS/android_device_mediatek_sepolicy_vndr | lineage-24.0 | MTK sepolicy |
+| hardware/mediatek | LineageOS/android_hardware_mediatek | lineage-23.2 | MT6789 HALs |
+| device/mediatek/sepolicy_vndr | LineageOS/android_device_mediatek_sepolicy_vndr | lineage-23.2 | MTK sepolicy |
 | hardware/transsion | mt6789-transsion/hardware_transsion | lineage-23.0 | Transsion HALs; no lineage-24.0 branch exists yet |
-| vendor/mediatek/ims | mmetem55/android_vendor_mediatek_ims | android-17 | IMS |
+| vendor/mediatek/ims | xiaomi-mediatek-devs/android_vendor_mediatek_ims | android-16 | IMS |
 | vendor/infinity | ProjectInfinity-X/vendor_infinity | 16 | common_full_phone.mk for `infinity_X6886` |
 
 `hardware/google/interfaces`, `hardware/google/pixel*` and `hardware/lineage/compat` come from the LineageOS default manifest; do not add duplicates.
