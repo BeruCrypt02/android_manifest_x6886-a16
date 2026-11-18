@@ -17,8 +17,8 @@
            path="device/mediatek/sepolicy_vndr" remote="x6886" revision="lineage-24.0" />
   <project name="mt6789-transsion/hardware_transsion"
            path="hardware/transsion" remote="x6886" revision="lineage-23.0" />
-  <project name="xiaomi-mediatek-devs/android_vendor_mediatek_ims"
-           path="vendor/mediatek/ims" remote="x6886" revision="android-16" />
+  <project name="mmetem55/android_vendor_mediatek_ims"
+           path="vendor/mediatek/ims" remote="x6886" revision="android-17" />
 
   <!-- InfinityX vendor; required by the infinity_X6886 product (common_full_phone.mk) -->
   <project name="ProjectInfinity-X/vendor_infinity"

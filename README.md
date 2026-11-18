@@ -23,7 +23,7 @@ repo sync -c
 | hardware/mediatek | LineageOS/android_hardware_mediatek | lineage-24.0 | MT6789 HALs |
 | device/mediatek/sepolicy_vndr | LineageOS/android_device_mediatek_sepolicy_vndr | lineage-24.0 | MTK sepolicy |
 | hardware/transsion | mt6789-transsion/hardware_transsion | lineage-23.0 | Transsion HALs; no lineage-24.0 branch exists yet |
-| vendor/mediatek/ims | xiaomi-mediatek-devs/android_vendor_mediatek_ims | android-16 | IMS |
+| vendor/mediatek/ims | mmetem55/android_vendor_mediatek_ims | android-17 | IMS |
 | vendor/infinity | ProjectInfinity-X/vendor_infinity | 16 | common_full_phone.mk for `infinity_X6886` |
 | vendor/lunaris/dolby | tranQuila-Project/vendor_lunaris_dolby | main | synced only; not wired into the build |
 
