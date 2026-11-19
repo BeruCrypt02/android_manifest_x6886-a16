@@ -2,23 +2,19 @@
 <manifest>
   <remote name="x6886" fetch="https://github.com/" />
 
-  <!-- Device / vendor trees for the Infinix X6886 (MT6789) -->
   <project name="BeruCrypt02/android_device_infinix_X6886-a16"
            path="device/infinix/x6886" remote="x6886" revision="lineage-24.0" />
   <project name="BeruCrypt02/android_vendor_infinix_X6886-a16"
-           path="vendor/infinix/x6886" remote="x6886" revision="lineage-24.0" />
+           path="vendor/infinix/x6886" remote="x6886" revision="lineage-24.0" clone-depth="1" />
   <project name="BeruCrypt02/android_device_transsion_infinix_X6886-prebuilts"
-           path="device/infinix/x6886-prebuilts" remote="x6886" revision="main" />
+           path="device/infinix/x6886-prebuilts" remote="x6886" revision="main" clone-depth="1" />
 
-  <!-- MTK sources the tree inherits -->
   <project name="LineageOS/android_hardware_mediatek"
-           path="hardware/mediatek" remote="x6886" revision="lineage-23.2" />
+           path="hardware/mediatek" remote="x6886" revision="lineage-24.0" />
   <project name="LineageOS/android_device_mediatek_sepolicy_vndr"
-           path="device/mediatek/sepolicy_vndr" remote="x6886" revision="lineage-23.2" />
+           path="device/mediatek/sepolicy_vndr" remote="x6886" revision="lineage-24.0" />
   <project name="mt6789-transsion/hardware_transsion"
            path="hardware/transsion" remote="x6886" revision="lineage-23.0" />
-  <project name="xiaomi-mediatek-devs/android_vendor_mediatek_ims"
-           path="vendor/mediatek/ims" remote="x6886" revision="android-16" />
-
-
+  <project name="malachite-project/android_vendor_mediatek_ims"
+           path="vendor/mediatek/ims" remote="x6886" revision="lineage-24.0" clone-depth="1" />
 </manifest>

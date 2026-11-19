@@ -1,6 +1,6 @@
 # android_manifest_x6886-a16
 
-Local manifest for building the Infinix X6886 (MT6789) trees.
+Local manifest for building the Infinix X6886 (MT6789) trees on LineageOS 24.0.
 
 ## Usage
 
@@ -15,19 +15,16 @@ repo sync -c
 
 ## Projects
 
-| Path | Repo | Revision | Notes |
-|---|---|---|---|
-| device/infinix/x6886 | BeruCrypt02/android_device_infinix_X6886-a16 | lineage-24.0 | device tree |
-| vendor/infinix/x6886 | BeruCrypt02/android_vendor_infinix_X6886-a16 | lineage-24.0 | vendor blobs |
-| device/infinix/x6886-prebuilts | BeruCrypt02/android_device_transsion_infinix_X6886-prebuilts | main | kernel prebuilts |
-| hardware/mediatek | LineageOS/android_hardware_mediatek | lineage-23.2 | MT6789 HALs |
-| device/mediatek/sepolicy_vndr | LineageOS/android_device_mediatek_sepolicy_vndr | lineage-23.2 | MTK sepolicy |
-| hardware/transsion | mt6789-transsion/hardware_transsion | lineage-23.0 | Transsion HALs; no lineage-24.0 branch exists yet |
-| vendor/mediatek/ims | xiaomi-mediatek-devs/android_vendor_mediatek_ims | android-16 | IMS |
+| Path | Repo | Revision |
+|---|---|---|
+| device/infinix/x6886 | BeruCrypt02/android_device_infinix_X6886-a16 | lineage-24.0 |
+| vendor/infinix/x6886 | BeruCrypt02/android_vendor_infinix_X6886-a16 | lineage-24.0 |
+| device/infinix/x6886-prebuilts | BeruCrypt02/android_device_transsion_infinix_X6886-prebuilts | main |
+| hardware/mediatek | LineageOS/android_hardware_mediatek | lineage-24.0 |
+| device/mediatek/sepolicy_vndr | LineageOS/android_device_mediatek_sepolicy_vndr | lineage-24.0 |
+| hardware/transsion | mt6789-transsion/hardware_transsion | lineage-23.0 |
+| vendor/mediatek/ims | malachite-project/android_vendor_mediatek_ims | lineage-24.0 |
+
+The vendor, prebuilts and IMS projects use `clone-depth="1"` to keep the sync small.
 
 `hardware/google/interfaces`, `hardware/google/pixel*` and `hardware/lineage/compat` come from the LineageOS default manifest; do not add duplicates.
-
-## Notes
-
-- `hardware/transsion` only ships `lineage-23.0`; compatibility with lineage-24.0 is unverified.
-- Stock dump carries its own Dolby stack (`vendor.dolby.dms@2.0`, `libcodec2_store_dolby`, `vendor.dolby.media.c2-default-service-dax`, `vendor.dolby.dms.service`) which is not yet in the vendor tree. Wiring Dolby is a separate decision; it is not in this manifest.
